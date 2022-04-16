@@ -14,9 +14,6 @@ def password(request):
     punctuation = '!#$%&*+-=?@^_(){}[]`~'
 
     chars = lowercase_letters
-    # print('Введите количество паролей, которое требуется сгенерировать.')
-    # count_pass = int(input())
-    # print('Введите требуемую длину пароля.')
     password_length = int(request.GET.get('password_length', 12))
     if request.GET.get('numbers'):
         chars += digits
