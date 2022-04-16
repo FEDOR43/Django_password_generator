@@ -36,3 +36,7 @@ def password(request):
         return password
 
     return render(request, 'generator/password.html', {'password': generate_password(password_length, chars)})
+
+
+def about(request):
+    return render(request, 'generator/about.html')
